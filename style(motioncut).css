@@ -1,0 +1,136 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    max-width: 100px;
+    margin-right: 20px;
+}
+
+.pricing-container {
+    max-width: 1200px;
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.product-section {
+    flex: 0 0 calc(30% - 20px);
+    margin-bottom: 20px;
+    height: 100%; 
+}
+
+.pricing-card {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%; 
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+
+/* Added this class for unit input */
+.pricing-card input.unit {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 10px;
+    width: calc(100% - 22px);
+    box-sizing: border-box;
+    transition: border 2s ease-in-out; 
+}
+
+/* Added this style for unit button */
+.pricing-card .unit-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+    margin-top: 10px; 
+}
+
+/* Added this style for unit button on hover */
+.pricing-card .unit-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Added this style for units container */
+.pricing-card .units-container {
+    display: flex;
+    flex-direction: column; /* Align items in a column */
+    margin-top: 10px;
+}
+
+
+.pricing-card:hover {
+    transform: scale(1.05);
+}
+
+.pricing-card h2 {
+    color: #333;
+}
+
+.pricing-card p {
+    color: #666;
+}
+
+.pricing-card .price {
+    font-size: 24px;
+    color: #007bff;
+    margin: 20px 0;
+}
+
+/* Style for currency dropdown/select */
+.pricing-card select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.small-image {
+    max-width: 50%;
+    height: auto;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    .product-section {
+        flex: 0 0 100%;
+    }
+}
